@@ -4,5 +4,6 @@ FUNCTION zz_git_test_fm.
 *"----------------------------------------------------------------------
 
 
-  DATA(_screen_number) = '0010'.
+  DATA(_screen_number) = '0020'.
+  CALL SCREEN _screen_number.
 ENDFUNCTION.

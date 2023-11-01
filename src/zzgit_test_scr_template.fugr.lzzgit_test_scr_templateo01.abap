@@ -7,11 +7,12 @@
 *&
 *&---------------------------------------------------------------------*
 MODULE status_0020 OUTPUT.
-  SELECT SINGLE FROM t001
-              FIELDS bukrs, butxt, ort01, land1, waers, ktopl, stceg
-               WHERE bukrs = '0001'
-                INTO @t001.
+  SELECT SINGLE FROM t002tx
+              FIELDS *
+               WHERE spras = 'E'
+                 and sprsl = '3E'
+                INTO @t002tx ##no_text.
 
-  SET PF-STATUS 'CLOSE_COMPANY'.
-  SET TITLEBAR 'CLOSE_COMPANY'.
+  SET PF-STATUS 'LANGUAGE_DISPLAY'.
+  SET TITLEBAR 'LANGUAGE_DISPLAY'.
 ENDMODULE.
