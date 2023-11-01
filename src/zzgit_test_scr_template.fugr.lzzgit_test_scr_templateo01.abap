@@ -7,11 +7,8 @@
 *&
 *&---------------------------------------------------------------------*
 MODULE status_0020 OUTPUT.
-  SELECT SINGLE FROM t002tx
-              FIELDS *
-               WHERE spras = 'E'
-                 and sprsl = '3E'
-                INTO @t002tx ##no_text.
+  SELECT SINGLE * FROM t002tx INTO t002tx
+    WHERE spras = 'E' AND sprsl = '3E'.
 
   SET PF-STATUS 'LANGUAGE_DISPLAY'.
   SET TITLEBAR 'LANGUAGE_DISPLAY'.
