@@ -1,7 +1,7 @@
-FUNCTION-POOL ZZGIT_TEST_SCR_TEMPLATE.      "MESSAGE-ID ..
+FUNCTION-POOL zzgit_test_scr_template.      "MESSAGE-ID ..
 
 * INCLUDE LZZGIT_TEST_SCR_TEMPLATED...       " Local class definition
 
-tables t001.
+TABLES: t002tx.
 
-data: ok_code.
+DATA: ok_code.
